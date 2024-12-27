@@ -1,4 +1,4 @@
-const tet = new Date(Date.UTC(2025, 0, 29, 0, 0, 0));
+const tet = new Date(Date.UTC(2025, 0, 29, 17, 0, 0));
 function countTime() {
   let currentDate = new Date();
   let time = tet.getTime() - currentDate.getTime();
