@@ -14,8 +14,6 @@ function countTime() {
     Math.floor(phut) +
     " phút " +
     Math.floor(giay) +
-    " giây" +
-    tet.getTime() +
-    currentDate.getTime();
+    " giây";
 }
 let loop = setInterval(countTime, 1000);
