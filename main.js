@@ -1,4 +1,4 @@
-const tet = new Date("2025-01-29T00:00:00");
+const tet = new Date(Date.UTC(2025, 0, 29, 0, 0, 0));
 function countTime() {
   let currentDate = new Date();
   let time = tet.getTime() - currentDate.getTime();
@@ -14,6 +14,8 @@ function countTime() {
     Math.floor(phut) +
     " phút " +
     Math.floor(giay) +
-    " giây";
+    " giây" +
+    tet.getTime() +
+    currentDate.getTime();
 }
 let loop = setInterval(countTime, 1000);
